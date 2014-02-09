@@ -10,4 +10,15 @@
 
 @implementation Shelf
 
+- (id)init
+{
+    self = [super init];
+    if (self)
+    {
+        // superclass successfully initialized, further
+        // initialization happens here ...
+    }
+    return self;
+}
+
 @end

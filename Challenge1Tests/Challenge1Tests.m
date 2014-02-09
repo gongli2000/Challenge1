@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Book.h"
 
 @interface Challenge1Tests : XCTestCase
 
@@ -28,7 +29,9 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    
+    Book *x = [[Book alloc] init];
+    Book* y = x;
 }
 
 @end

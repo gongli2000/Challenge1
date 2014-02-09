@@ -10,4 +10,22 @@
 
 @implementation Book
 
+- (id)init
+{
+    self = [super init];
+    if (self)
+    {
+        // superclass successfully initialized, further
+        // initialization happens here ...
+    }
+    return self;
+}
+
+-(void) enshelf: (Shelf *) shelf
+{
+}
+-(void) unshelf: (Shelf *) shelf
+{
+}
+
 @end
