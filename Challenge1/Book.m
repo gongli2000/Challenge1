@@ -8,6 +8,7 @@
 
 #import "Book.h"
 
+
 @implementation Book
 
 - (id)init
@@ -15,15 +16,29 @@
     self = [super init];
     if (self)
     {
-        // superclass successfully initialized, further
-        // initialization happens here ...
+        self.title= @"";
+        self.author=@"";
     }
     return self;
 }
 
--(void) enshelf: (Shelf *) shelf
+- (id)init: (NSString*) title  author:(NSString* )author
 {
+    self = [super init];
+    if (self)
+    {
+        self.title= title;
+        self.author=author;
+    }
+    return self;
 }
+
+-(void) enshelf: (Shelf*) shelf
+{
+    [shelf.books setValue:self forKey: self.title];
+    
+}
+
 -(void) unshelf: (Shelf *) shelf
 {
 }

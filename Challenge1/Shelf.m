@@ -15,8 +15,7 @@
     self = [super init];
     if (self)
     {
-        // superclass successfully initialized, further
-        // initialization happens here ...
+        self.books = [[NSMutableDictionary alloc] init];
     }
     return self;
 }

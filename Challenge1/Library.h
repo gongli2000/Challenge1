@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Shelf.h"
 
 @interface Library : NSObject
 
 @property NSMutableArray *shelves;
 
+-(void) addShelves: (int) numshelves;
+-(void) removeshelf:(Shelf*) shelf;
+-(Shelf*) getshelf: (int) numshelf;
 
 @end

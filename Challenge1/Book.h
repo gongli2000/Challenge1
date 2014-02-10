@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-@class Shelf;
+#import "Library.h"
+#import "Shelf.h"
 
 @interface Book : NSObject
 
@@ -15,6 +16,8 @@
 @property NSString *author;
 @property NSString *publisher;
 
--(void) enshelf: (Shelf *) shelf;
+- (id)init: (NSString*) title  author:(NSString* )author;
+
+-(void) enshelf: (Shelf*) shelf;
 -(void) unshelf: (Shelf *) shelf ;
 @end

@@ -16,9 +16,25 @@
     self = [super init];
     if (self)
     {
-        // superclass successfully initialized, further
-        // initialization happens here ...
+        self.shelves = [[NSMutableArray alloc] init];
     }
     return self;
 }
+
+-(void) addShelves: (int) numshelves
+{
+    for(int i =0;i < numshelves ;i++){
+     Shelf* shelf = [[Shelf alloc] init];
+     [self.shelves addObject: shelf];
+    }
+}
+
+-(void) removeshelf:(Shelf*) shelf{
+    [self.shelves removeObject: shelf];
+}
+
+-(Shelf*) getshelf:(int) numshelf{
+    return self.shelves[numshelf];
+}
+
 @end

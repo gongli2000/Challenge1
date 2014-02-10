@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "Book.h"
 
+
 @interface Challenge1Tests : XCTestCase
 
 @end
@@ -27,11 +28,16 @@
     [super tearDown];
 }
 
+
 - (void)testExample
 {
     
-    Book *x = [[Book alloc] init];
-    Book* y = x;
+    Library *lib = [[Library alloc] init];
+    [lib addShelves: 10];
+    Book* y = [[Book alloc] init:@"The dog and cat" author:@"sam shepard"];
+    [y enshelf: [lib getshelf: 0]];
+    NSLog(@"fd");
+    
 }
 
 @end
