@@ -16,5 +16,6 @@
 -(void) addShelves: (int) numshelves;
 -(void) removeshelf:(Shelf*) shelf;
 -(Shelf*) getshelf: (int) numshelf;
+-(NSMutableArray*) getBooks;
 
 @end

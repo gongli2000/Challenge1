@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Challenge1Tests/Challenge1Tests.m"
-            timestampString = "413695111.95548"
+            timestampString = "413739836.608111"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "-testExample"
             landmarkType = "5">
          </BreakpointContent>

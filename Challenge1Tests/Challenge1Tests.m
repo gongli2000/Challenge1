@@ -37,10 +37,14 @@
     Book* b1 = [[Book alloc] init:@"The dog and cat" author:@"sam shepard"];
     [b1 enshelf: [lib getshelf: 0]];
     [b1 unshelf: [lib getshelf:0]];
-    Book* b2 = [[Book alloc] init:@"The dog and casasdsdst" author:@"sam shepard"];
+    Book* b2 = [[Book alloc] init:@"title 2" author:@"sam shepard"];
     [b2 enshelf: [lib getshelf:0]];
     
+    Book* b3 = [[Book alloc] init:@"title 3" author:@"sam shepard"];
+    [b3 enshelf: [lib getshelf:0]];
     
+    
+    NSMutableArray* books = [lib getBooks];
     NSLog(@"fd");
     
 }
