@@ -41,6 +41,7 @@
 
 -(void) unshelf: (Shelf *) shelf
 {
+    [shelf.books removeObjectForKey: self.title];
 }
 
 @end

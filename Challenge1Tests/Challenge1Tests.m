@@ -34,8 +34,13 @@
     
     Library *lib = [[Library alloc] init];
     [lib addShelves: 10];
-    Book* y = [[Book alloc] init:@"The dog and cat" author:@"sam shepard"];
-    [y enshelf: [lib getshelf: 0]];
+    Book* b1 = [[Book alloc] init:@"The dog and cat" author:@"sam shepard"];
+    [b1 enshelf: [lib getshelf: 0]];
+    [b1 unshelf: [lib getshelf:0]];
+    Book* b2 = [[Book alloc] init:@"The dog and casasdsdst" author:@"sam shepard"];
+    [b2 enshelf: [lib getshelf:0]];
+    
+    
     NSLog(@"fd");
     
 }
