@@ -12,6 +12,7 @@
 @interface Library : NSObject
 
 @property NSMutableArray *shelves;
+@property NSString* name;
 
 -(void) addShelves: (int) numshelves;
 -(void) removeshelf:(Shelf*) shelf;
