@@ -1,5 +1,5 @@
 //
-//  Shelf.h
+//  Challenge1.h
 //  Challenge1
 //
 //  Created by Larry on 2/9/14.
@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Shelf : NSObject
-
-@property NSMutableDictionary *books;
-
+@interface Challenge1 : NSObject
 
 @end
