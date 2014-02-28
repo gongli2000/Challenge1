@@ -18,7 +18,6 @@
     {
         self.title= @"";
         self.author=@"";
-        self.publisher=@"";
     }
     return self;
 }
@@ -36,13 +35,13 @@
 
 -(void) enshelf: (Shelf*) shelf
 {
-    [shelf.books addObject:self];
+    [shelf.books setValue:self forKey: self.title];
     
 }
 
 -(void) unshelf: (Shelf *) shelf
 {
-    [shelf.books removeObject: self];
+    [shelf.books removeObjectForKey: self.title];
 }
 
 @end
