@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		52C045C018A7ECA200E87798 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C045BF18A7ECA200E87798 /* Foundation.framework */; };
-		52C045C518A7ECA200E87798 /* Challenge1.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 52C045C418A7ECA200E87798 /* Challenge1.h */; };
-		52C045C718A7ECA200E87798 /* Challenge1.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C045C618A7ECA200E87798 /* Challenge1.m */; };
 		52C045CE18A7ECA200E87798 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C045CD18A7ECA200E87798 /* XCTest.framework */; };
 		52C045CF18A7ECA200E87798 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C045BF18A7ECA200E87798 /* Foundation.framework */; };
 		52C045D118A7ECA200E87798 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C045D018A7ECA200E87798 /* UIKit.framework */; };
@@ -38,7 +36,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				52C045C518A7ECA200E87798 /* Challenge1.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,8 +45,6 @@
 		52C045BC18A7ECA200E87798 /* libChallenge1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libChallenge1.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C045BF18A7ECA200E87798 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		52C045C318A7ECA200E87798 /* Challenge1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Challenge1-Prefix.pch"; sourceTree = "<group>"; };
-		52C045C418A7ECA200E87798 /* Challenge1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Challenge1.h; sourceTree = "<group>"; };
-		52C045C618A7ECA200E87798 /* Challenge1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Challenge1.m; sourceTree = "<group>"; };
 		52C045CC18A7ECA200E87798 /* Challenge1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Challenge1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C045CD18A7ECA200E87798 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		52C045D018A7ECA200E87798 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -119,14 +114,12 @@
 		52C045C118A7ECA200E87798 /* Challenge1 */ = {
 			isa = PBXGroup;
 			children = (
-				52C045C418A7ECA200E87798 /* Challenge1.h */,
 				52C045E518A7ECF600E87798 /* Library.h */,
 				52C045E618A7ECF600E87798 /* Library.m */,
 				52C045E818A7ED0500E87798 /* Shelf.h */,
 				52C045E918A7ED0500E87798 /* Shelf.m */,
 				52C045EB18A7ED1100E87798 /* Book.h */,
 				52C045EC18A7ED1100E87798 /* Book.m */,
-				52C045C618A7ECA200E87798 /* Challenge1.m */,
 				52C045C218A7ECA200E87798 /* Supporting Files */,
 			);
 			path = Challenge1;
@@ -241,7 +234,6 @@
 			files = (
 				52C045ED18A7ED1100E87798 /* Book.m in Sources */,
 				52C045EA18A7ED0500E87798 /* Shelf.m in Sources */,
-				52C045C718A7ECA200E87798 /* Challenge1.m in Sources */,
 				52C045E718A7ECF600E87798 /* Library.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,6 +419,7 @@
 				52C045E118A7ECA200E87798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52C045E218A7ECA200E87798 /* Build configuration list for PBXNativeTarget "Challenge1Tests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +428,7 @@
 				52C045E418A7ECA200E87798 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
